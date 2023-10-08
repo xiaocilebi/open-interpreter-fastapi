@@ -1,0 +1,10 @@
+version: "3.0"
+services:
+  fastapi:
+    volumes:
+      - ./fastapi:/app
+    build: ./fastapi
+    ports:
+      - 8080:80
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
