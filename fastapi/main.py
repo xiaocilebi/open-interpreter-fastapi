@@ -23,6 +23,7 @@ def read_root():
 def read_item(item_id: int, q: Union[str, None] = None):
     return {"item_id": item_id, "q": q}
 
+
 @app.get("/oi/")
 def oi() -> str:
     message = "日本の首都はどこですか？"
